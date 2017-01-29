@@ -271,7 +271,7 @@ class EventDevice(object):
                 else:
                     if name in self.name:
                         return
-        self.close()
+            self.close()
         raise IOError("Input device %r not found." % (name,))
 
     def open(self, filename):
